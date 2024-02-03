@@ -15,6 +15,17 @@ struct SomeText: View {
     }
 }
 
+struct PrimaryModifier: ViewModifier {
+    func body(content: Content) -> some View {
+        content
+            .font(.largeTitle)
+            .foregroundColor(.white)
+            .padding()
+            .background(.blue)
+            .clipShape(.rect(cornerRadius: 10))
+    }
+}
+
 struct ContentView: View {
     @ViewBuilder var someViewBuilder: some View {
         HStack {
@@ -22,7 +33,7 @@ struct ContentView: View {
             Text("Bar")
         }
     }
-    
+
     var somePropertyView = Text("I'm a property")
 
     var someComputedView: some View {
@@ -33,9 +44,11 @@ struct ContentView: View {
         VStack {
             SomeText(text: "Pineapple")
             someViewBuilder
+                .modifier(PrimaryModifier())
             someComputedView
             somePropertyView
             Text("Hello, world!")
+                .primaryModifier()
         }
         .padding()
     }
@@ -43,4 +56,10 @@ struct ContentView: View {
 
 #Preview {
     ContentView()
+}
+
+extension View {
+    func primaryModifier() -> some View {
+        modifier(PrimaryModifier())
+    }
 }
