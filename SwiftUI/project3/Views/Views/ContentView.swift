@@ -17,14 +17,24 @@ struct SomeText: View {
 
 struct ContentView: View {
     @ViewBuilder var someViewBuilder: some View {
-        Text("Foo")
-        Text("Bar")
+        HStack {
+            Text("Foo")
+            Text("Bar")
+        }
+    }
+    
+    var somePropertyView = Text("I'm a property")
+
+    var someComputedView: some View {
+        Text("I was computed")
     }
 
     var body: some View {
         VStack {
             SomeText(text: "Pineapple")
             someViewBuilder
+            someComputedView
+            somePropertyView
             Text("Hello, world!")
         }
         .padding()
