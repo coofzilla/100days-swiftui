@@ -39,7 +39,7 @@ struct GridContainerModifier: ViewModifier {
     GridStack(rows: 3, columns: 3, content: { row, column in
         VStack {
             Text("R: \(row) C: \(column)")
-            Text("ABCDdddddddddd")
+            Text("ABCDddddddddddddddddddddddddddddddddddddddd")
             Text("asdf")
         }
         .modifier(GridContainerModifier())
