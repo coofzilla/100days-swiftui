@@ -14,6 +14,7 @@
 		A406CDA52B6DBDA000998D5C /* ViewsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A406CDA42B6DBDA000998D5C /* ViewsTests.swift */; };
 		A406CDAF2B6DBDA100998D5C /* ViewsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A406CDAE2B6DBDA100998D5C /* ViewsUITests.swift */; };
 		A406CDB12B6DBDA100998D5C /* ViewsUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A406CDB02B6DBDA100998D5C /* ViewsUITestsLaunchTests.swift */; };
+		A406CDBE2B6DD2E300998D5C /* GridStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = A406CDBD2B6DD2E300998D5C /* GridStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		A406CDAA2B6DBDA100998D5C /* ViewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ViewsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A406CDAE2B6DBDA100998D5C /* ViewsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewsUITests.swift; sourceTree = "<group>"; };
 		A406CDB02B6DBDA100998D5C /* ViewsUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewsUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		A406CDBD2B6DD2E300998D5C /* GridStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +98,7 @@
 			children = (
 				A406CD932B6DBD9F00998D5C /* ViewsApp.swift */,
 				A406CD952B6DBD9F00998D5C /* ContentView.swift */,
+				A406CDBD2B6DD2E300998D5C /* GridStack.swift */,
 				A406CD972B6DBDA000998D5C /* Assets.xcassets */,
 				A406CD992B6DBDA000998D5C /* Preview Content */,
 			);
@@ -259,6 +262,7 @@
 			files = (
 				A406CD962B6DBD9F00998D5C /* ContentView.swift in Sources */,
 				A406CD942B6DBD9F00998D5C /* ViewsApp.swift in Sources */,
+				A406CDBE2B6DD2E300998D5C /* GridStack.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
