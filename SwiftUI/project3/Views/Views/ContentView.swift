@@ -11,6 +11,18 @@ struct SomeText: View {
     var text: String
 
     var body: some View {
+        Text(self.text)
+    }
+}
+
+protocol Chat: View {
+    var text: String { get }
+}
+
+struct TeamChat: Chat {
+    let text: String
+    
+    var body: some View {
         Text(text)
     }
 }
@@ -43,10 +55,11 @@ struct ContentView: View {
     var body: some View {
         VStack {
             SomeText(text: "Pineapple")
-            someViewBuilder
+            TeamChat(text: "Hello, Team!")
+            self.someViewBuilder
                 .modifier(PrimaryModifier())
-            someComputedView
-            somePropertyView
+            self.someComputedView
+            self.somePropertyView
             Text("Hello, world!")
                 .primaryModifier()
         }
